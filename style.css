@@ -1,0 +1,242 @@
+/*estilo para todos los body del proyecto*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+*::-webkit-scrollbar{
+    width: 7px;
+    background-color: #fcafd2;
+   
+
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #fcafd2;
+    height: 5px;
+
+}
+
+/*estilo para el header principal*/
+.headerr{
+    height:100px ;
+    width: 104vw;
+   background-color:#F870AE ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.logo{
+    margin: 5px;    
+    padding: 5px;
+    height: 80px;
+}
+.nav-link{
+    text-decoration: none ;
+    color: black;
+    font-size: 20px;
+    margin: 3px;
+    padding-right: 3px;
+   font-family:  Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link:hover{
+    color: white;
+}
+.boton{
+    margin: 5px;
+    padding: 5px;
+    width: 95px;
+    height: 35px;
+    border-radius: 15px;
+    color: #F870AE ;
+    background-color: black;
+    font-size: 14px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+/*estilos para los formularios*/
+.form{
+    background-color:#fff ;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#F870AE 0.9px, #e5e5f7 0.9px);
+background-size: 18px 18px;
+text-align: center;
+}
+.form_title{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+.form_parrafo{
+    font-weight: 300;
+}
+.form_link{
+    font-weight: 400;
+    color: #F870AE;
+    text-decoration: none;
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;  
+}
+.form_group{
+    position: relative;
+    --color: #5757577e
+}
+.form_input{
+    width: 100%;
+    background: black;
+    color: #F870AE;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    border-bottom: 1px solid #F870AE;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.form_input:focus + .form_label, .form_input:not(:placeholder-shown)+ .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #F870AE;
+
+}
+.form_label{
+    font-size: 25px;
+    font-weight: bold;
+    cursor:pointer;
+    position: absolute;
+    top: -6px;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.form_button{
+    margin: auto;
+    padding: 5px;
+    width: 135px;
+    height: 35px;
+    border-radius: 15px;
+    color: #F870AE ;
+    background-color: black;
+    font-size: 14px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+@media (max-width: 425px) {
+   .form_title{
+    font-size: 1.8rem;
+   }
+}
+/* estilo para el acto de testigo*/
+.form_testimonio{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F870AE;
+    border-radius: 5px;
+background: radial-gradient(circle, transparent 20%, #F870AE 20%, #F870AE 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #F870AE 20%, #F870AE 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#F870AE 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #F870AE 1.2000000000000002px, #F870AE 1.2000000000000002px) -0.6000000000000001px 0;
+background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+}
+/*estilo para las imagenes de la pagina de bienvenida*/
+.container_one{
+    margin-top: 3rem;
+    margin-left: 5rem;
+    padding: 2px;
+    width: 290px;
+    height: 530px;
+    background-color: black;
+    border-radius: 75px;
+    display: flex;
+}
+.container_img{
+    width: 288px;
+    height: 527px;
+    border-radius: 75px;
+    margin: 0;
+    padding: 2px;
+    display: flex;
+
+}
+.container_two{
+    margin-top: -30rem;
+    margin-left: 25rem;
+    padding: 5px;
+    width: 410px;
+    height: 210px;    
+    border-radius: 15px;   
+    display: flex;    
+    background-color: #ead4de;
+    opacity: 0.9;
+    background-image: radial-gradient(#F870AE 1.2000000000000002px, #ead4de 1.2000000000000002px);
+    background-size: 24px 24px;
+}
+.container_parrafo{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: justify;
+}
+.container_three{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3px;
+    padding: 2px;
+    width: 290px;
+    height: 530px;
+    background-color: black;
+    border-radius: 75px;    
+    position: absolute;
+    left: 55rem;
+    top: 20rem;
+    display: flex;
+}
+.container_img2{
+    width: 289px;
+    height: 528px;
+    border-radius: 75px;
+    margin: 0;
+    padding:2px;   
+
+}
+.container_four{
+    margin: 2px;
+    padding: 5px;
+    width: 410px;
+    height: 160px;    
+    border-radius: 15px;   
+    display: flex;    
+    background-color: #ead4de;
+    opacity: 0.9;
+    background-image: radial-gradient(#F870AE 1.2000000000000002px, #ead4de 1.2000000000000002px);
+    background-size: 24px 24px;
+    position: absolute;
+    top: 450px;
+    left: 479px;   
+}
+.footer{
+    height:100px ;
+    width: 101.5vw;
+    padding: 1em;
+    margin-top: 3em;
+   background-color:#F870AE ;
+   position: absolute;
+   top: 100vh;
+  
+
+}
+
+
+
+
+
+
+
+
+    
